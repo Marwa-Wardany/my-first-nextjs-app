@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  
+  height: 10000px;
+}
+
+.hero{
+  background-image: url('../public/Hero Iamge.png');
+  background-size: cover;
+  overflow: hidden;
+  min-height: calc(100vh - 78px);
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.text-line{
+  border-bottom: 3px solid #145BB0 ;
+}
+
+.footer{
+  background-color:rgba(12, 12, 164, 0.632);
+  height: 200px;
+}
+.team-card{
+  background-color:  #04356F !important;
+}
+.start{
+  position: relative;
+  background-color: #064C9F;
+  height: 250px;
+  padding: 50px 0 !important;
+   overflow: hidden;
+   margin-top: 150px;
+}
+ .rocket {
+          max-width: 300px;
+          animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-15px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+.blue-text{
+  color: #145BB0 !important;
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #145BB0  !important; 
+  border-bottom: 2px solid #145BB0 ;
+}
+.main-btn{
+background: linear-gradient(to right, #04356F, #0866D5);
+height: 60px;
+width: 300px;
+font-weight: bold;
+color: white;
+padding: 5px;
+font-size: large;
+}
+
