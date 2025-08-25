@@ -44,7 +44,7 @@ export const Services = () => {
         <div className='row'>
           {services.map((service, id) => (
             <div className='col-lg-4' key={id}>
-              <div className='card h-100 border-0'>
+              <div className='card border-0'>
                 <Image
                 src={service.img}
                 alt={service.title}
@@ -53,7 +53,7 @@ export const Services = () => {
                 className="card-img-top rounded"
                 />
                 <div className='card-body'>
-                  <p className="fw-semibold">{service.title}</p>
+                  <p className="fw-bold">{service.title}</p>
                 </div>
               </div>
 

@@ -11,7 +11,7 @@ export default function Page() {
         <p>
           توقف عن القلق بشأن مشاكل التكنولوجيا. ركز على عملك. دعونا نقدم الدعم الذي تستحقه
         </p>
-        <button className="main-btn rounded-pill ">
+        <button className="main-btn rounded-pill mb-5">
           اتصل الان
         </button>
       </div>

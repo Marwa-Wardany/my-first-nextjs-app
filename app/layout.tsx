@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/Components/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Footer } from "@/Components";
+import { TopHeader } from "@/Components/TopHeader";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const geistSans = Geist({
@@ -31,9 +32,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <TopHeader />
         <NavBar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

@@ -1,8 +1,4 @@
-
-
-
 import Image from "next/image";
-
 import { FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
 
 type TeamMember = {
@@ -99,41 +95,35 @@ export const TeamPage = () => {
       <div className="row g-4 py-3">
         {team.map((member, idx) => (
           <div className="col-lg-4" key={idx}>
-            <div className="card team-card h-100 border-0 shadow-lg rounded-4 p-3 text-white position-relative">
+            <div className="card team-card border-0 shadow-lg rounded-4 p-3 text-white position-relative">
               <div className="d-flex justify-content-center">
                 <Image
                   src={member.img}
                   alt={member.name}
                   width={80}
                   height={80}
-                  className="rounded-circle border border-3 border-light position-absolute"
+                  className="rounded-circle border-3 border-light position-absolute"
                   style={{ top: "-40px" }}
                 />
               </div>
               <div className="card-body mt-5">
                 <h4 className="fw-bold fs-5">{member.name}</h4>
-                <p className="mb-2 text-info fw-semibold">
+                <p className="mb-2 text-info">
                   {member.role}
                 </p>
                 <p style={{ fontSize: "0.9rem" }}>
                   {member.description}
                 </p>
                 <div className="d-flex justify-content-center gap-3">
-                  {member.socials.linkedin && (
                     <a href={member.socials.linkedin} target="_blank">
                       <FaLinkedin size={18} className="text-white" />
                     </a>
-                  )}
-                  {member.socials.facebook && (
                     <a href={member.socials.facebook} target="_blank">
                       <FaFacebook size={18} className="text-white" />
-                    </a>
-                  )}
-                  {member.socials.twitter && (
+                    </a>   
                     <a href={member.socials.twitter} target="_blank">
                       <FaTwitter size={18} className="text-white" />
                     </a>
-                  )}
                 </div>
               </div>
             </div>
