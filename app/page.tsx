@@ -4,7 +4,7 @@ import "./globals.css";
 import { About } from "@/Components/About";
 import { Services } from "@/Components/Services";
 import { TeamPage } from "@/Components/TeamPage";
-// import { StartYourProject } from "@/Components/StartYourProject";
+import { StartYourProject } from "@/Components/StartYourProject";
 export default function Home() {
   return (
     <main>
@@ -12,7 +12,7 @@ export default function Home() {
       <About/>
       <Services />
       <TeamPage />
-      {/* <StartYourProject/> */}
+      <StartYourProject/>
     </main>
      
 

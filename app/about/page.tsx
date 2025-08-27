@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import Link from 'next/link';
 const page = () => {
   return (
     <div className='about'>
@@ -14,8 +15,10 @@ const page = () => {
                   <p>
                     توقف عن القلق بشأن مشاكل التكنولوجيا. ركز على عملك. دعونا نقدم الدعم الذي تستحقه
                   </p>
-                  <button className="main-btn rounded-pill">
-                    اتصل الان
+                  <button className="main-btn rounded-pill mb-5">
+                    <Link href='/order' className='link'>
+                      اتصل الان
+                    </Link>
                   </button>
                 </div>
             </div>  

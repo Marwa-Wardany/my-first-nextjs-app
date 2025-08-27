@@ -3,13 +3,11 @@ import Image from "next/image";
 
 export const About = () => {
   return (
-    <div className='About pt-5'>
+    <div className='pt-5'>
         <div className='container'>
-        <div className=' text-center w-100 d-flex justify-content-center align-items-center'>
-            <h1 className='text-line fw-bold mb-3 w-25'>من <span className='blue-text'>نحن ؟</span></h1>
-        </div>
-        
-        
+        <div className='main-title text-center position-relative w-100 d-flex justify-content-center align-items-center mb-3'>
+            <h1 className='text-line fw-bold w-25'>من <span className='blue-text'>نحن ؟</span></h1>
+        </div> 
         <div className='row d-flex justify-content-center align-items-center'>
             <div className='col-lg-6 col-md-6'>
                 <h1>خطوتك الأولى <span className='blue-text'>نحو القمة</span></h1>

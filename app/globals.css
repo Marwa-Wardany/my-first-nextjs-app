@@ -38,34 +38,25 @@ body {
   background-repeat: no-repeat;
 }
 
-.text-line{
-  border-bottom: 3px solid #145BB0 ;
+.main-title::after{
+  content: "";
+    width: 200px;
+    height: 3px;
+    background-color: #145BB0;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .team-card{
   background-color:  #04356F !important;
 }
 .start{
-  position: relative;
   background-color: #064C9F;
-  height: 250px;
-  margin-top: 150px;
 }
 .rocket {
-          max-width: 600px !important;
-          max-height: 600px;
-          animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% {
-      transform: translateY(0px);
-    }
-  50% {
-      transform: translateY(-15px);
-    }
-  100% {
-      transform: translateY(0px);
-      }
+          max-width: 500px !important;
+          max-height: 500px;
 }
 .blue-text{
   color: #145BB0 !important;
@@ -87,5 +78,10 @@ font-size: large;
 .disabled{
   background: #D6D6D7;
   color: #145BB0;
+}
+
+.link{
+color: white;
+text-decoration: none;
 }
 

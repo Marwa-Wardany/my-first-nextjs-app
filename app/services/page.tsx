@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Services } from "@/Components";
-
+import Link from "next/link";
 export default function Page() {
   return (
     <div>
@@ -12,7 +12,9 @@ export default function Page() {
           توقف عن القلق بشأن مشاكل التكنولوجيا. ركز على عملك. دعونا نقدم الدعم الذي تستحقه
         </p>
         <button className="main-btn rounded-pill mb-5">
-          اتصل الان
+          <Link href='/order' className="link">
+            اتصل الان
+          </Link>
         </button>
       </div>
     </div>
