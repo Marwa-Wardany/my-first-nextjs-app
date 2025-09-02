@@ -30,7 +30,7 @@ function page() {
         setErrorMessage(null);
         const {phone} = formInput
         if (phone.length < 10 || phone.length > 12){
-            setErrorMessage("Phone number is incorrect");
+            setErrorMessage("الرقم الذي ادخلته غير صحيح ");
         }
         setSubmitted(true)
   };
